@@ -1,0 +1,167 @@
+/* 头部 */
+.top {
+    width: 100%;
+    height: 13em;
+    background-color: #7bb6fa;
+    border-bottom: 1em solid #f8f8f8;
+
+    .middle {
+        width: 100%;
+        height: 6em;
+        display: flex;
+        justify-content: space-between;
+        margin: 1em 0;
+
+        .left {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            color: #fff;
+
+            .image {
+                width: 5em;
+                height: 5em;
+                border: 1px solid #7bb6fa;
+                border-radius: 50%;
+                background: url('../images/cover.jpg') repeat top left;
+                background-size: cover;
+            }
+        }
+
+        .right {
+            width: 6em;
+            height: 2em;
+            text-align: center;
+            line-height: 2em;
+            margin-top: 2em;
+            background-color: #7eccff;
+            border-radius: 10px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .list{
+            width: 30%;
+            color: #fff;
+            text-align: center;
+
+            span{
+                display: inline-block;
+                width: 100%;
+            }
+
+            .num{
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* icons 小图标 */
+.icons{
+    width: 100%;
+    height: 8em;
+    border-bottom: 1em solid #f8f8f8;
+
+    .item{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .list{
+            width: 30%;
+            text-align: center;
+
+            .image{
+                width: 55%;
+                margin: 0 auto;
+                padding: .5em 0;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &{
+            .item{
+                .list{
+                    .image{
+                        width: 27%;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &{
+            height: 10em;
+            .item{
+                .list{
+                    .image{
+                        width: 27%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* setting 设置 */ 
+.setting{
+    width: 100%;
+    height: 27em;
+
+    .item{
+        width: 100%;
+        
+        .list{
+            width: 100%;
+            height: 3em;
+            line-height: 3em;
+            border-bottom: 3px solid #f8f8f8;
+
+            .right{
+                float: right;
+            }
+        }
+    }
+
+    @media screen and (min-width:414px) {
+        &{
+            height: 33em;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &{
+            height: 42em;
+        }
+    }
+
+    @media screen and (min-width:834px) {
+        &{
+            height: 48em;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        &{
+            height: 65em;
+        }
+    }
+}

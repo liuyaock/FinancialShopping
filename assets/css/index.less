@@ -1,0 +1,182 @@
+.banner {
+    width: 100%;
+    height: 100%;
+
+
+    .back {
+        margin: 1em;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+/* broadcast 播报 */
+.broadcast{
+    width: 100%;
+    margin: 1em 0;
+
+    .info{
+        width: 100%;
+
+        .glyphicon-volume-up{
+            color: #24aa7d;
+            margin-right: 1em;
+        }
+
+        .word{
+            color: #686868;
+        }
+    }
+}
+
+/* relevant 相关 */
+.relevant{
+    width: 100%;
+    margin-bottom: 1em;
+
+    .top{
+        width: 100%;
+        height: 5em;
+        margin-bottom: 2em;
+
+        .item{
+            width: 100%;
+            display: flex;
+            height: 6em;
+            justify-content: space-around;
+
+            .list{
+                padding: .7em;
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .left{
+                    width: 50%;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: #442417;
+                }
+
+                .right{
+                    width: 50%;
+                }
+
+                &:first-child{
+                    background-color: #f8e6ed;
+                }
+
+                &:nth-child(2){
+                    background-color:#f8eedf;
+                }
+
+                &:last-child{
+                    background-color: #dfe8f8;
+                }
+            }
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        
+        .item{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+
+            .list{
+                width: 17%;
+                text-align: center;
+
+                p{
+                    margin: .5em 0;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &{
+            .top{
+                margin-bottom: 3em;
+                .item{
+                    height: 7em;
+                    .list{
+                        .left{
+                            font-size: 1.5em;
+                            text-align: center;
+                        }
+                        .right{
+                            padding: 0 1.5em;
+                        }
+                    }
+                }
+            }
+
+            .bottom{
+                .item{
+                    .list{
+                        p{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* customized 私人订制*/
+.customized{
+    width: 100%;
+    margin-bottom: 2em;
+
+    .top{
+        width: 100%;
+        height: 3em;
+        line-height: 3em;
+        margin-bottom: 1em;
+        display: flex;
+        justify-content: space-between;
+
+        h2{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        span{
+            text-align: right;
+            font-weight: bold;
+            color: #666;
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        
+        img{
+            width: 100%;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &{
+            .top{
+                h2{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:414px) {
+        &{
+            margin-bottom: 6em;
+        }
+    }
+}
